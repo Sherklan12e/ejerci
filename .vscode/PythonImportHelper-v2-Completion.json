@@ -1,0 +1,11 @@
+[
+    {
+        "label": "test_main",
+        "kind": 2,
+        "importPath": "ejercicies",
+        "description": "ejercicies",
+        "peekOfCode": "def test_main():",
+        "detail": "ejercicies",
+        "documentation": {}
+    }
+]
