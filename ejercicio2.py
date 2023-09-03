@@ -3,3 +3,4 @@ def calcular_Iva(p):
     return IVA  
 precioCompra = float(input("Ingresa el valor de la compra: "))
 IVA = calcular_Iva(precioCompra)
+print(IVA)
