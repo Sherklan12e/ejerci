@@ -1,11 +1,92 @@
 [
     {
-        "label": "test_main",
+        "label": "calcular_nota",
         "kind": 2,
         "importPath": "ejercicies",
         "description": "ejercicies",
-        "peekOfCode": "def test_main():",
+        "peekOfCode": "def calcular_nota(n1, n2, n3):\n    return (n1*0.3) + (n2*0.3) + (n3*0.4)\nn1= float(input(\"Ingrese la primera nota: \"))\nn2= float(input(\"Ingrese la primera nota: \"))\nn3= float(input(\"Ingrese la primera nota: \"))\nnotafinal= calcular_nota(n1,n2,n3)\nprint(\"Nota final: \" , round(notafinal, 4))",
         "detail": "ejercicies",
+        "documentation": {}
+    },
+    {
+        "label": "calcular_Iva",
+        "kind": 2,
+        "importPath": "ejercicio2",
+        "description": "ejercicio2",
+        "peekOfCode": "def calcular_Iva(p):\n    IVA = p * 0.19\n    return IVA  \nprecioCompra = float(input(\"Ingresa el valor de la compra: \"))\nIVA = calcular_Iva(precioCompra)\nprint(IVA)",
+        "detail": "ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "precioCompra",
+        "kind": 5,
+        "importPath": "ejercicio2",
+        "description": "ejercicio2",
+        "peekOfCode": "precioCompra = float(input(\"Ingresa el valor de la compra: \"))\nIVA = calcular_Iva(precioCompra)\nprint(IVA)",
+        "detail": "ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "IVA",
+        "kind": 5,
+        "importPath": "ejercicio2",
+        "description": "ejercicio2",
+        "peekOfCode": "IVA = calcular_Iva(precioCompra)\nprint(IVA)",
+        "detail": "ejercicio2",
+        "documentation": {}
+    },
+    {
+        "label": "suma",
+        "kind": 2,
+        "importPath": "ejercicios4",
+        "description": "ejercicios4",
+        "peekOfCode": "def suma(a, b):\n    return a + b\n# Función para restar la primera variable con la segunda\ndef resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):\n    return a * b\n# Función para dividir la primera variable por la segunda (manejando la división por cero)\ndef division(a, b):",
+        "detail": "ejercicios4",
+        "documentation": {}
+    },
+    {
+        "label": "resta",
+        "kind": 2,
+        "importPath": "ejercicios4",
+        "description": "ejercicios4",
+        "peekOfCode": "def resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):\n    return a * b\n# Función para dividir la primera variable por la segunda (manejando la división por cero)\ndef division(a, b):\n    if b != 0:\n        return a / b\n    else:",
+        "detail": "ejercicios4",
+        "documentation": {}
+    },
+    {
+        "label": "multiplicacion",
+        "kind": 2,
+        "importPath": "ejercicios4",
+        "description": "ejercicios4",
+        "peekOfCode": "def multiplicacion(a, b):\n    return a * b\n# Función para dividir la primera variable por la segunda (manejando la división por cero)\ndef division(a, b):\n    if b != 0:\n        return a / b\n    else:\n        return \"Error: División por cero\"\n# Llamar a las funciones y mostrar los resultados\nprint(f\"Suma: {suma(entero, flotante)}\")",
+        "detail": "ejercicios4",
+        "documentation": {}
+    },
+    {
+        "label": "division",
+        "kind": 2,
+        "importPath": "ejercicios4",
+        "description": "ejercicios4",
+        "peekOfCode": "def division(a, b):\n    if b != 0:\n        return a / b\n    else:\n        return \"Error: División por cero\"\n# Llamar a las funciones y mostrar los resultados\nprint(f\"Suma: {suma(entero, flotante)}\")\nprint(f\"Resta: {resta(entero, flotante)}\")\nprint(f\"Multiplicación: {multiplicacion(entero, flotante)}\")\nprint(f\"División: {division(entero, flotante)}\")",
+        "detail": "ejercicios4",
+        "documentation": {}
+    },
+    {
+        "label": "entero",
+        "kind": 5,
+        "importPath": "ejercicios4",
+        "description": "ejercicios4",
+        "peekOfCode": "entero = 34\nflotante = 34.12\n# Función para sumar las dos variables\ndef suma(a, b):\n    return a + b\n# Función para restar la primera variable con la segunda\ndef resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):",
+        "detail": "ejercicios4",
+        "documentation": {}
+    },
+    {
+        "label": "flotante",
+        "kind": 5,
+        "importPath": "ejercicios4",
+        "description": "ejercicios4",
+        "peekOfCode": "flotante = 34.12\n# Función para sumar las dos variables\ndef suma(a, b):\n    return a + b\n# Función para restar la primera variable con la segunda\ndef resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):\n    return a * b",
+        "detail": "ejercicios4",
         "documentation": {}
     }
 ]
