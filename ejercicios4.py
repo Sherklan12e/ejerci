@@ -1,28 +1,38 @@
-# Definir las variables
-entero = 34
-flotante = 34.12
-
-# Función para sumar las dos variables
-def suma(a, b):
-    return a + b
-
-# Función para restar la primera variable con la segunda
-def resta(a, b):
-    return a - b
-
-# Función para multiplicar las dos variables
-def multiplicacion(a, b):
-    return a * b
-
-# Función para dividir la primera variable por la segunda (manejando la división por cero)
-def division(a, b):
-    if b != 0:
-        return a / b
+def ValidarNro(nro):
+    estado = True
+    if nro < -100:
+        estado = False
     else:
-        return "Error: División por cero"
+        if nro > 100:
+            estado = False
+    return estado
+sumar = 0
+for x in range(1, 5, 1):
 
-# Llamar a las funciones y mostrar los resultados
-print(f"Suma: {suma(entero, flotante)}")
-print(f"Resta: {resta(entero, flotante)}")
-print(f"Multiplicación: {multiplicacion(entero, flotante)}")
-print(f"División: {division(entero, flotante)}")
+    finWhileNumero = False
+    while finWhileNumero == False:
+        numero = int(input("Ingrese un numero (entero): "))
+
+        if ValidarNro(numero) == False:
+            print("El numero ingresado esta por fuera del dominio (-100, +100)")
+        else:
+            finWhileNumero = True
+    
+    sumar = sumar + numero
+
+    if x == 1:
+        maximo = numero
+        minimo = numero
+    else:
+        if numero > maximo:
+            maximo = numero
+        
+        if numero < minimo:
+            minimo = numero
+
+print("El número mayor es: ", maximo)
+print("El número menor es: ", minimo)
+
+promedio = sumar / 4
+print("El promedio es: ", promedio)
+

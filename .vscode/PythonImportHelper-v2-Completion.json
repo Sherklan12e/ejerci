@@ -36,56 +36,29 @@
         "documentation": {}
     },
     {
-        "label": "suma",
+        "label": "ValidarNro",
         "kind": 2,
         "importPath": "ejercicios4",
         "description": "ejercicios4",
-        "peekOfCode": "def suma(a, b):\n    return a + b\n# Función para restar la primera variable con la segunda\ndef resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):\n    return a * b\n# Función para dividir la primera variable por la segunda (manejando la división por cero)\ndef division(a, b):",
+        "peekOfCode": "def ValidarNro(nro):\n    estado = True\n    if nro < -100:\n        estado = False\n    else:\n        if nro > 100:\n            estado = False\n    return estado\nsumar = 0\nfor x in range(1, 5, 1):",
         "detail": "ejercicios4",
         "documentation": {}
     },
     {
-        "label": "resta",
-        "kind": 2,
-        "importPath": "ejercicios4",
-        "description": "ejercicios4",
-        "peekOfCode": "def resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):\n    return a * b\n# Función para dividir la primera variable por la segunda (manejando la división por cero)\ndef division(a, b):\n    if b != 0:\n        return a / b\n    else:",
-        "detail": "ejercicios4",
-        "documentation": {}
-    },
-    {
-        "label": "multiplicacion",
-        "kind": 2,
-        "importPath": "ejercicios4",
-        "description": "ejercicios4",
-        "peekOfCode": "def multiplicacion(a, b):\n    return a * b\n# Función para dividir la primera variable por la segunda (manejando la división por cero)\ndef division(a, b):\n    if b != 0:\n        return a / b\n    else:\n        return \"Error: División por cero\"\n# Llamar a las funciones y mostrar los resultados\nprint(f\"Suma: {suma(entero, flotante)}\")",
-        "detail": "ejercicios4",
-        "documentation": {}
-    },
-    {
-        "label": "division",
-        "kind": 2,
-        "importPath": "ejercicios4",
-        "description": "ejercicios4",
-        "peekOfCode": "def division(a, b):\n    if b != 0:\n        return a / b\n    else:\n        return \"Error: División por cero\"\n# Llamar a las funciones y mostrar los resultados\nprint(f\"Suma: {suma(entero, flotante)}\")\nprint(f\"Resta: {resta(entero, flotante)}\")\nprint(f\"Multiplicación: {multiplicacion(entero, flotante)}\")\nprint(f\"División: {division(entero, flotante)}\")",
-        "detail": "ejercicios4",
-        "documentation": {}
-    },
-    {
-        "label": "entero",
+        "label": "sumar",
         "kind": 5,
         "importPath": "ejercicios4",
         "description": "ejercicios4",
-        "peekOfCode": "entero = 34\nflotante = 34.12\n# Función para sumar las dos variables\ndef suma(a, b):\n    return a + b\n# Función para restar la primera variable con la segunda\ndef resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):",
+        "peekOfCode": "sumar = 0\nfor x in range(1, 5, 1):\n    finWhileNumero = False\n    while finWhileNumero == False:\n        numero = int(input(\"Ingrese un numero (entero): \"))\n        if ValidarNro(numero) == False:\n            print(\"El numero ingresado esta por fuera del dominio (-100, +100)\")\n        else:\n            finWhileNumero = True\n    sumar = sumar + numero",
         "detail": "ejercicios4",
         "documentation": {}
     },
     {
-        "label": "flotante",
+        "label": "promedio",
         "kind": 5,
         "importPath": "ejercicios4",
         "description": "ejercicios4",
-        "peekOfCode": "flotante = 34.12\n# Función para sumar las dos variables\ndef suma(a, b):\n    return a + b\n# Función para restar la primera variable con la segunda\ndef resta(a, b):\n    return a - b\n# Función para multiplicar las dos variables\ndef multiplicacion(a, b):\n    return a * b",
+        "peekOfCode": "promedio = sumar / 4\nprint(\"El promedio es: \", promedio)",
         "detail": "ejercicios4",
         "documentation": {}
     }

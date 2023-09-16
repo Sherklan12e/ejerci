@@ -1,5 +1,3 @@
-for i in range(0,13):
-    print(f"la tabla de {i} es :   ")
-    for j in range(0,13):
-        calcular = i * j 
-        print(f"{i} *  {j} = {calcular}")
+""" Ingresar nombre y sueldo de 3 (tres) empleados. Por medio de una función validar
+el sueldo. Mostrar el nombre del empleado con mayor sueldo.
+"""
