@@ -1,1 +1,1 @@
-sad
+print('rojo')
