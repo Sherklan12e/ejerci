@@ -6,3 +6,6 @@
 # orden es 2.
 
 
+varr = [3,342,34,23,4,2,34,2,34,23,4]
+cvoc = list(varr)
+s
