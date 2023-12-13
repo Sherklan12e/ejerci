@@ -4,8 +4,15 @@
 # se rompe ese orden.
 # Ejemplo: {1, 3, 5, 2, 4, 6, 8, 8, 9, 10}, el n-umero de veces que se rompe el
 # orden es 2.
-
-
-varr = [3,342,34,23,4,2,34,2,34,23,4]
-cvoc = list(varr)
-s
+while True:
+        
+    try:
+        edad  = int(input('Ingrese su edad: '))
+        print('Tu edad es : ', edad)
+        break
+        
+    except:
+        print('Ingresaste mal')
+        
+    finally:
+        print('La ejecucion a finalizado')
