@@ -26,18 +26,18 @@ def verificar(arreglo):
                 arreglo[j] = arreglo[j+1]
                 arreglo[j+1] = prueba
                 
-    for i in arreglo1:
-        if arreglo[i] == arreglo1[i]:
-            count = count +1
-        elif arreglo[i] != arreglo1[i]:
+    for i in range(len(arreglo1)):
+        if arreglo[i] != arreglo1[i]:
             count2 = arreglo1[i]
-            if 
+            break
+        
+    if count2 > 0:
+        print(f'Los numeros no estas de forma creciente: y el que la malogra es {count2}')
+    else:
+        print('El numero esta ordenado bien')
             
-            
-            
-            
-            
-
-
 
 N =  n = int(input('Ingresa de cuanto va ser tu arreglo: '))
+
+vector = arreglo(N)
+verificar(vector)
