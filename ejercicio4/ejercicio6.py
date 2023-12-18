@@ -26,4 +26,4 @@ while True == finwhile:
         finwhile = False
         
 print('El mayor de ingreso es en el: ', ingreso)
-print('Que la suma mayor es : ', mayor)
+print('Que la suma mayor es C: ', mayor)
