@@ -25,5 +25,5 @@ while True == finwhile:
     if num1 ==0 and num2 == 0:
         finwhile = False
         
-print('El mayor de ingreso es en e;: ', ingreso)
+print('El mayor de ingreso des en e;: ', ingreso)
 print('Que la suma mayor es C: ', mayor)
